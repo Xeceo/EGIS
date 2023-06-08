@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Электронный учебник ГИС</title>
+	<link rel="stylesheet" href="src/main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="MainFon">
+			<img src="src/img/Mainfon.jpg">
+		</div>
+		<div class="Title">
+			<p>ваш электронный учебник</p>
+			<h1>Узнайте все о ГИС</h1>
+			<p>Геоинформационные системы - знания и возможности будущего, начни изучать их уже сейчас</p>
+			<button id="scrollWindow">Перейти к обучению &#5121</button>
+		</div>
+	</div>
+
+	<div class="List">
+		<div class="leftI bgImage">
+			<h2 class="corector">НАШИ</h2>
+		</div>
+		<div class="achives">
+			<h2 class="corector2"><pre> ДОСТИЖЕНИЯ</pre></h2>
+			<ul>
+				<li><img src="src/img/favClock.png" alt=""><p>более 2 часов практики</p></li>
+				<li><img src="src/img/favCompany.png" alt=""><p>более 2000 компаний используют ГИС</p></li>
+				<li><img src="src/img/favCP.png" alt=""><p>современные методы обучения</p></li>
+				<li><img src="src/img/favLecture.png" alt=""><p>более 6 лекций</p></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="Links">
+		<div class="contentLinks">
+			<div class="conLeft">
+				<img src="src/img/Ibook.png" alt="" class="I1">
+				<h3>Видеоуроки</h3></br>
+				<p>
+					Также посмотрите видеоролики,
+					которые наглядно показывают возможности ГИС.
+					Окунитесь в процесс с головой.</br>
+					<form action="Videos.html"><button>Перейти</button></form>
+				</p>
+				<img src="src/img/Itest.png" alt="" class="I2">
+			</div>
+			<div class="line"></div>
+			<div class="conRight">
+				<h3 style="margin-top: 1%;">Лекции</h3></br>
+				<p>
+					Прочтите легко усваиваемый материал,
+					благодаря хорошо продуманной структуре,
+					которой преподают в передовых ВУЗах страны.
+					Он охватывает все сферы ГИС.</br>
+					<form action="lecture.html"><button>Перейти</button></form>
+				</p>
+				<img src="src/img/Ivideo.png" alt="" class="I3">
+				<h3>Тесты</h3></br>
+				<p>
+					Проверьте свои знания, а также закрепите их практикой.
+					Пройдите тесты и узнайте свой уровень подготовки.</br>
+					<form action="tests.html"><button>Перейти</button></form>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="Know">
+		<div class="find findOne">
+			<div class="blurFind"><h4>УЗНАЙТЕ</h4></div>
+			<p>Учёные объявили, что комбинация передовых технологии секвенирования генов с Google Earth впервые позволила составить точную карту распространения брюшного тифа в Катманду</p>
+		</div>
+		<div class="find findTwo">
+			<div class="blurFind"><h4>УЗНАЙТЕ</h4></div>
+			<p>Президент компании Esri Джек Денджермонд подтвердил свое намерение сделать карты доступными для всех, сделав денежное пожертвование в фонд OpenStreetMap Foundation. Фонд OpenStreetMap Foundation стремится создать и предложить на бесплатной основе географические данные, а именно карты улиц, по всему миру</p>
+		</div>
+		<div class="find findThree">
+			<div class="blurFind"><h4>УЗНАЙТЕ</h4></div>
+			<p>Специалисты республиканского Управления Роспотребнадзора совместно с архитекторами ведут работы по созданию картографического электронного реестра баз данных санитарно-защитных зон предприятий республики</p>
+		</div>
+		<div class="pinkBox"></div>
+		<div class="greenBox"></div>
+	</div>
+
+	<div class="Footer">
+		<div class="container">
+			<div class="conFooter">
+				<ul>
+					<li><a href="lecture.html">Лекции</a></li>
+					<li><a href="Videos.html">Видео</a></li>
+					<li><a href="tests.html">Тесты</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://uust.ru/">УУНТ</a></li>
+					<li><a href="https://vk.com/ugatu_kaf_gis">ВК</a></li>
+					<li><a href="https://t.me/Xe_ce_o">Телеграм</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<script>
+	var button = document.querySelector('#scrollWindow');
+	var Links = document.querySelector('.Links');
+
+	button.addEventListener('click', () => {
+		behavior: 'smooth'
+		Links.scrollIntoView({behavior: "smooth"});
+	})
+</script>
+</body>
+</html>
